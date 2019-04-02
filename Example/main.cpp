@@ -72,7 +72,7 @@ void SetupRC()
     loader.loadFile("OBJ_Files/shape1.obj");
     iCounter = loader.FillTriangleBatch(vPoints);
     
-    // Load the triangle strip
+    // Load the shape onto the buffer
     triangleBatch.Begin(GL_TRIANGLES, iCounter);
     triangleBatch.CopyVertexData3f(vPoints);
     triangleBatch.End();    
