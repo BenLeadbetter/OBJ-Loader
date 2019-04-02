@@ -62,9 +62,7 @@ std::size_t Loader::FillTriangleBatch(Con&& container)
 
     // cycle through the faces
     for(auto itr = m_Faces.begin(); itr != m_Faces.end(); ++itr)
-    {
         appendVertices(std::forward<Con>(container), triCount, *itr);
-    }
 
     return triCount;
 }
