@@ -69,7 +69,7 @@ void SetupRC()
 
     // Load up the data
     Loader loader;
-    loader.loadFile("shape1.obj");
+    loader.loadFile("OBJ_Files/shape1.obj");
     iCounter = loader.FillTriangleBatch(vPoints);
     
     // Load the triangle strip
