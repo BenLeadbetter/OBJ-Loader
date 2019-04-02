@@ -27,8 +27,7 @@ bool Loader::loadFile(const std::string& filename)
         for(size_t i = 0; i != 3; ++i)
         {
             fs >> curWord;
-            vertex[i] = std::stof
-            (curWord);
+            vertex[i] = std::stof(curWord);
         }
 
         m_Vertices.push_back(vertex);
@@ -96,7 +95,7 @@ bool Loader::loadFile(const std::string& filename)
             // then texture index
             strItr2 = find(strItr1, curWord.end(), '/');
             if(strItr1 != strItr2)
-                fData[1] = stoi(string(strItr1, strItr2)); // -1 ??
+                fData[1] = stoi(string(strItr1, strItr2));
             else
                 fData[1] = 0;
             
